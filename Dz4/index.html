@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Выберите значения из списков</h2>
+
+    <div class="form-group">
+        <label for="dropdown1">Список 1:</label>
+        <select class="form-control" id="dropdown1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="dropdown2">Список 2:</label>
+        <select class="form-control" id="dropdown2">
+            <option>А</option>
+            <option>Б</option>
+            <option>В</option>
+            <option>Г</option>
+            <option>Д</option>
+        </select>
+    </div>
+
+    <button type="button" class="btn btn-primary" id="openModalBtn" data-toggle="modal" data-target="#resultModal">
+        Открыть модальное окно
+    </button>
+
+    <!-- Modal -->
+    <div class="modal" id="resultModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Выбранные значения:</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <p id="selectedValues"></p>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // Обработчик нажатия на кнопку
+        $("#openModalBtn").click(function () {
+            // Получение выбранных значений из списков
+            var value1 = $("#dropdown1").val();
+            var value2 = $("#dropdown2").val();
+
+            // Вывод данных в модальном окне
+            $("#selectedValues").text("Значение 1: " + value1 + ", Значение 2: " + value2);
+        });
+    });
+</script>
+
+</body>
+</html>
