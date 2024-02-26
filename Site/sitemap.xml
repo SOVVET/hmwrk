@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://localhost:8888/CODE/Domashki/Site/index.php</loc>
+        <lastmod>2024-02-26</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8888/CODE/Domashki/Site/about.php</loc>
+        <lastmod>2024-02-26</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8888/CODE/Domashki/Site/services.php</loc>
+        <lastmod>2024-02-26</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8888/CODE/Domashki/Site/gallery.php</loc>
+        <lastmod>2024-02-26</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost:8888/CODE/Domashki/Site/contact.php</loc>
+        <lastmod>2024-02-26</lastmod>
+    </url>
+</urlset>
